@@ -29,6 +29,8 @@ import { UploadButton } from "@/components/uploadthing";
 
 const couponTypes = ["Hotel", "Flight", "Lounge Access", "Food", "Other"];
 
+const status = ["approved", "pending"];
+
 export default function SellCouponPage() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,7 +78,7 @@ export default function SellCouponPage() {
         email: data.email,
         phone: data.phone,
         tags: data.tags,
-        status: "pending",
+        status: status[0],
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       };

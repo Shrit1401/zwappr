@@ -21,6 +21,7 @@ interface Coupon {
   expiry: string;
   sellingPrice: number;
   verified: boolean;
+  status?: string;
 }
 
 const types = ["All", "Hotel", "Flight", "Lounge Access", "Food"];
@@ -55,6 +56,7 @@ export default function BrowsePage() {
   const filtered = coupons
     .filter(
       (c) =>
+        c.status === "approved" &&
         (type === "All" || c.type === type) &&
         (location === "" ||
           c.location.toLowerCase().includes(location.toLowerCase())) &&
