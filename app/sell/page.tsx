@@ -94,7 +94,7 @@ export default function SellCouponPage() {
   }
 
   return (
-    <div className="max-w-xl mx-auto py-10">
+    <div className="max-w-xl mx-auto py-10 px-4">
       <h1 className="text-2xl font-bold mb-6">Post a Coupon for Sale</h1>
       {submitted ? (
         <div className="p-4 bg-green-100 rounded">

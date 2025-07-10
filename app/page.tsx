@@ -42,7 +42,8 @@ export default function Home() {
               Escrow Protection
             </h2>
             <p className="text-neutral-600">
-              Your money is safe. We hold payment until you get your coupon.
+              Your money is always safe. We hold your payment until you get your
+              coupon.
             </p>
           </div>
           <div className="flex flex-col items-center">
@@ -95,15 +96,15 @@ export default function Home() {
           <h3 className="text-lg font-semibold mb-2 text-black">Contact Us</h3>
           <div className="mb-2 text-neutral-700">
             Email:{" "}
-            <a href="mailto:shrit1401@gmail.com" className="underline">
-              shrit1401@gmail.com
+            <a href="mailto:krrishc.work@gmail.com" className="underline">
+              krrishc.work@gmail.com
             </a>
           </div>
           <div className="text-neutral-700">
-            Phone: <span className="font-mono">+91 9667271155</span>
+            Phone: <span className="font-mono">+91 81689 87223</span>
           </div>
           <Button className="mt-3 hover:bg-neutral-800">
-            <a target="_blank" href="https://wa.me/9667271155">
+            <a target="_blank" href="https://wa.me/918168987223">
               WhatsApp Us
             </a>
           </Button>
