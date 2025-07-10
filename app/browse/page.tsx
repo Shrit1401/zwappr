@@ -52,13 +52,19 @@ export default function BrowsePage() {
     fetchCoupons();
   }, []);
 
-  const filtered = coupons.filter(
-    (c) =>
-      (type === "All" || c.type === type) &&
-      (location === "" ||
-        c.location.toLowerCase().includes(location.toLowerCase())) &&
-      (search === "" || c.title.toLowerCase().includes(search.toLowerCase()))
-  );
+  const filtered = coupons
+    .filter(
+      (c) =>
+        (type === "All" || c.type === type) &&
+        (location === "" ||
+          c.location.toLowerCase().includes(location.toLowerCase())) &&
+        (search === "" || c.title.toLowerCase().includes(search.toLowerCase()))
+    )
+    .sort((a, b) => {
+      if (a.verified && !b.verified) return -1;
+      if (!a.verified && b.verified) return 1;
+      return 0;
+    });
 
   if (loading) {
     return (

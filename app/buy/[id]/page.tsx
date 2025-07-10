@@ -124,11 +124,11 @@ export default function BuyPage() {
             </div>
             <div className="mb-1">
               Or pay to UPI ID:{" "}
-              <span className="font-mono font-black">shrit1401@oksbi</span>
+              <span className="font-mono font-black">krrishchhabra@ibl</span>
             </div>
             <div className="mb-1">
               Or to phone:{" "}
-              <span className="font-mono font-black">9667271155</span>
+              <span className="font-mono font-black">+91 8168987223</span>
             </div>
             <div className="mt-2 text-sm text-neutral-600">
               We hold your payment in escrow until you receive the coupon.
