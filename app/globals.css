@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap");
+@font-face {
+  font-family: "Libertinus Math";
+  src: url("./font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @import "tailwindcss";
 @import "tw-animate-css";
